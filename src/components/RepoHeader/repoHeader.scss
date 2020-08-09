@@ -1,7 +1,37 @@
-.header__top {
-    display: flex;
-    align-items: center;
-    .header__top-right {
+@import '../../sass/colors';
+@import '../../sass/typography';
+.repo-header {
+    padding: 1rem;
+    width: 100vw;
+    background-color: $lt-gray;
+    border-bottom: 1px solid $gray-border;
+    .header__top {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+
+            a {
+                color: $blue-link;
+                text-decoration: none;
+                margin: 0 0.2rem;
+            }
+        }
+        .header__top-right {
+            display: flex;
+        }
+    }
+    .header__bottom {
+        i {
+            margin-right: 5px;
+        }
+        a {
+            color: $dark;
+            text-decoration: none;
+            margin: 0.5rem;
+        }
     }
 }
