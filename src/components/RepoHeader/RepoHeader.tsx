@@ -32,28 +32,28 @@ const RepoHeader: React.FC = () => {
             </div>
             <div className="header__bottom">
                 <div className="header__bottom-options">
-                    <a href="#">
+                    <a href="https://github.com/facebook/react">
                         <i className="fas fa-code"></i>Code
                     </a>
                     <a href="#">
                         <i className="fas fa-exclamation-circle"></i>Issues
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/facebook/react/pulls">
                         <i className="fas fa-project-diagram"></i>Pull requests
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/facebook/react/actions">
                         <i className="far fa-play-circle"></i>Actions
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/facebook/react/projects">
                         <i className="fas fa-tasks"></i>Projects
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/facebook/react/wiki">
                         <i className="fas fa-book-open"></i>Wiki
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/facebook/react/security">
                         <i className="fas fa-shield-alt"></i>Security
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/facebook/react/pulse">
                         <i className="fas fa-chart-line"></i>Insights
                     </a>
                 </div>
