@@ -1,13 +1,14 @@
 import React from 'react';
+import './repoFilterBar.scss';
 
 const RepoFilterBar: React.FC = () => {
     return (
-        <div>
-            <div className="bar-1">
+        <div className="repo-filter-bar">
+            <div className="bar bar-1">
                 <button>Filters</button>
                 <input type="text" placeholder="is:issue is:open" />
             </div>
-            <div className="bar-2">
+            <div className="bar bar-2">
                 <button>
                     <i className="fas fa-tags"></i>Labels
                 </button>
