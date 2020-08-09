@@ -1,6 +1,13 @@
+@import '../../sass/colors';
+
 .issue {
     padding: 1rem;
-    border: 1px solid gray;
+    border: 1px solid $gray-border;
+    a {
+        text-decoration: none;
+        color: $dark;
+        font-weight: 600;
+    }
     &:not(:last-child) {
         border-bottom: none;
     }
