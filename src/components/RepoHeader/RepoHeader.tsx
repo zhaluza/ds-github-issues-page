@@ -1,9 +1,7 @@
 import React from 'react';
 import './repoHeader.scss';
 
-interface Props {}
-
-const RepoHeader = (props: Props) => {
+const RepoHeader: React.FC = () => {
     return (
         <div className="repo-header">
             <div className="header__top">
