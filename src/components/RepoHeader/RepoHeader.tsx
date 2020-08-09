@@ -7,7 +7,9 @@ const RepoHeader: React.FC = () => {
             <div className="header__top">
                 <h2>
                     <i className="fas fa-book"></i> <a href="https://github.com/facebook">facebook</a>/
-                    <a href="https://github.com/facebook/react">react</a>
+                    <a href="https://github.com/facebook/react" className="bold">
+                        react
+                    </a>
                 </h2>
                 <div className="header__top-right">
                     <div className="header__top-watch">
