@@ -1,0 +1,7 @@
+.issue {
+    padding: 1rem;
+    border: 1px solid gray;
+    &:not(:last-child) {
+        border-bottom: none;
+    }
+}
