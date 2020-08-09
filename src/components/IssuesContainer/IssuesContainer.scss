@@ -1,10 +1,14 @@
-.issues-container__heading {
-    display: flex;
-    justify-content: space-between;
-    .heading__left {
+@import '../../sass/constants';
+.issues-container {
+    width: $container-width;
+    .issues-container__heading {
         display: flex;
-    }
-    .heading__right {
-        display: flex;
+        justify-content: space-between;
+        .heading__left {
+            display: flex;
+        }
+        .heading__right {
+            display: flex;
+        }
     }
 }
