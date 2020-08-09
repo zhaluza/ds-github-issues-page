@@ -1,0 +1,10 @@
+.issues-container__heading {
+    display: flex;
+    justify-content: space-between;
+    .heading__left {
+        display: flex;
+    }
+    .heading__right {
+        display: flex;
+    }
+}
