@@ -1,7 +1,7 @@
 # Github Issues Clone
 
 A recreation of Github's issues page, as seen
-[here](https://github.com/facebook/react/issues).
+[here](https://github.com/facebook/react/issues). All data is fetched in real time from Github's GraphQL API.
 
 To demo a live version of this app,
 [click here](https://flamboyant-leakey-d44728.netlify.app/).
@@ -34,6 +34,8 @@ To demo a live version of this app,
 
 -   [React](https://reactjs.org/)
 -   [Sass](https://sass-lang.com/)
+-   [GraphQL](https://graphql.org/)
+-   [Apollo](https://www.apollographql.com/)
 
 ### Tested With
 
