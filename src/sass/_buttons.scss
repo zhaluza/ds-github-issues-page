@@ -1,0 +1,13 @@
+@import 'colors';
+button {
+    background-color: white;
+    border: 1px solid $md-gray;
+    border-radius: 5px;
+    padding: 0.4rem 1.5rem;
+    margin: 0 0.5rem;
+}
+.btn-new-issue {
+    background-color: #2fa450;
+    font-weight: 600;
+    color: white;
+}
