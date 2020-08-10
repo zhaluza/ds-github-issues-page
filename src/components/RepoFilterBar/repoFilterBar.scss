@@ -1,10 +1,17 @@
-@import '../../sass/constants';
 .repo-filter-bar {
-    width: $container-width;
+    width: 100vw;
     display: flex;
     justify-content: space-evenly;
     margin: 1rem 0;
     input {
-        width: ($container-width * 0.6);
+        width: 60vw;
+    }
+}
+
+@media (min-width: 701px) {
+    .repo-filter-bar {
+        width: 60vw input {
+            width: (60vw * 0.6);
+        }
     }
 }

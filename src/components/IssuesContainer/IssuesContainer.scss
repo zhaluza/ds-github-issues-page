@@ -1,14 +1,29 @@
-@import '../../sass/constants';
+@import '../../sass/colors';
+
 .issues-container {
-    width: $container-width;
+    width: 100vw;
     .issues-container__heading {
         display: flex;
         justify-content: space-between;
+        background-color: $md-gray;
+        padding: 1rem 1rem;
         .heading__left {
             display: flex;
         }
         .heading__right {
             display: flex;
         }
+    }
+    details {
+        margin: 0 0.5rem;
+    }
+    details > summary::-webkit-details-marker {
+        display: none;
+    }
+}
+
+@media (min-width: 701px) {
+    .issues-container {
+        width: 60vw;
     }
 }
