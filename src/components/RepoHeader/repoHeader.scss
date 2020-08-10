@@ -1,11 +1,13 @@
 @import '../../sass/colors';
 @import '../../sass/typography';
+
 .repo-header {
     padding: 1rem;
     width: 100vw;
     background-color: $lt-gray;
-    border-bottom: 1px solid $gray-border;
+    border-bottom: 1px solid $md-gray;
     .header__top {
+        margin-bottom: 1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
