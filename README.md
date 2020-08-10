@@ -33,6 +33,7 @@ To demo a live version of this app,
 ### Built With
 
 -   [React](https://reactjs.org/)
+-   [TypeScript](https://www.typescriptlang.org/)
 -   [Sass](https://sass-lang.com/)
 -   [GraphQL](https://graphql.org/)
 -   [Apollo](https://www.apollographql.com/)
