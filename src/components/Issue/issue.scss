@@ -2,7 +2,7 @@
 
 .issue {
     padding: 1rem;
-    border: 1px solid $gray-border;
+    border: 1px solid $md-gray;
     a {
         text-decoration: none;
         color: $dark;
@@ -10,5 +10,52 @@
     }
     &:not(:last-child) {
         border-bottom: none;
+    }
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas:
+        ' info info comments'
+        'details details details';
+    .issue-left {
+        margin-right: 0.5rem;
+        color: $green;
+
+        display: flex;
+        align-items: center;
+
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0.2rem 0;
+        grid-area: info;
+        // flex-direction: column;
+        a {
+            transition: color 0.2s ease;
+            cursor: default;
+            &:hover {
+                color: $blue-link;
+            }
+        }
+        i {
+            margin-right: 0.5rem;
+        }
+    }
+    .issue-details {
+        color: $gray-text;
+        font-size: 0.8rem;
+        grid-area: details;
+        margin-left: 1.5rem;
+    }
+    .issue-right {
+        display: flex;
+        align-items: center;
+        grid-area: comments;
+        i {
+            margin-left: 0.5rem;
+        }
+    }
+    img {
+        width: 25px;
+        border-radius: 50%;
     }
 }
