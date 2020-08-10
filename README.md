@@ -28,7 +28,7 @@ To demo a live version of this app,
 ## About The Project
 
 <p align="center">
-    <img width="500" src="https://github.com/zhaluza/espp-budget-app/blob/master/screenshots/screenshot1?raw=true">
+    <img width="500" src="https://github.com/zhaluza/ds-github-issues-page/blob/master/screenshots/screenshot1.png?raw=true">
 </p>
 ### Built With
 
