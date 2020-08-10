@@ -4,7 +4,7 @@ A recreation of Github's issues page, as seen
 [here](https://github.com/facebook/react/issues).
 
 To demo a live version of this app,
-[click here](https://espp-budget-app.herokuapp.com/).
+[click here](https://flamboyant-leakey-d44728.netlify.app/).
 
 <!-- TABLE OF CONTENTS -->
 
