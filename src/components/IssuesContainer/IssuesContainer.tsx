@@ -39,10 +39,13 @@ const GET_ISSUES = gql`
                         labels(first: 10) {
                             edges {
                                 node {
-                                    description
+                                    name
                                     color
                                 }
                             }
+                        }
+                        comments(first: 100) {
+                            totalCount
                         }
                     }
                 }
@@ -51,7 +54,11 @@ const GET_ISSUES = gql`
     }
 `;
 
-const IssuesContainer: React.FC = () => {
+interface Props {
+    isMobile: boolean;
+}
+
+const IssuesContainer: React.FC<Props> = ({ isMobile }: Props) => {
     const [data, setData] = useState([]);
     useEffect(() => {
         client
@@ -72,7 +79,7 @@ const IssuesContainer: React.FC = () => {
                     edges: [
                         {
                             node: {
-                                description: string;
+                                name: string;
                                 color: string;
                             };
                         },
@@ -86,6 +93,7 @@ const IssuesContainer: React.FC = () => {
                 title: string;
                 url: string;
                 author: { login: string };
+                comments: { totalCount: number };
             };
         }) => (
             <Issue
@@ -97,6 +105,7 @@ const IssuesContainer: React.FC = () => {
                 assignees={issue.node.assignees.edges}
                 createdAt={issue.node.createdAt}
                 author={issue.node.author.login}
+                comments={issue.node.comments.totalCount}
             />
         ),
     );
@@ -105,34 +114,40 @@ const IssuesContainer: React.FC = () => {
     return (
         <div className="issues-container">
             <div className="issues-container__heading">
-                <div className="heading__left">
-                    <p>
-                        <i className="fas fa-exclamation-circle"></i> X open
-                    </p>
-                    <p>
-                        <i className="fas fa-check"></i> X closed
-                    </p>
-                </div>
-                <div className="heading__right">
-                    <details>
-                        <summary>Author</summary>
-                    </details>
-                    <details>
-                        <summary>Label</summary>
-                    </details>
-                    <details>
-                        <summary>Projects</summary>
-                    </details>
-                    <details>
-                        <summary>Milestones</summary>
-                    </details>
-                    <details>
-                        <summary>Assignee</summary>
-                    </details>
-                    <details>
-                        <summary>Sort</summary>
-                    </details>
-                </div>
+                {!isMobile && (
+                    <div className="heading__right">
+                        <details>
+                            <summary>
+                                Author <i className="fas fa-caret-down"></i>
+                            </summary>
+                        </details>
+                        <details>
+                            <summary>
+                                Label <i className="fas fa-caret-down"></i>
+                            </summary>
+                        </details>
+                        <details>
+                            <summary>
+                                Projects <i className="fas fa-caret-down"></i>
+                            </summary>
+                        </details>
+                        <details>
+                            <summary>
+                                Milestones <i className="fas fa-caret-down"></i>
+                            </summary>
+                        </details>
+                        <details>
+                            <summary>
+                                Assignee <i className="fas fa-caret-down"></i>
+                            </summary>
+                        </details>
+                        <details>
+                            <summary>
+                                Sort <i className="fas fa-caret-down"></i>
+                            </summary>
+                        </details>
+                    </div>
+                )}
             </div>
             <div className="issues-container__list">{issues}</div>
         </div>
