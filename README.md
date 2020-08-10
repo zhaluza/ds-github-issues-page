@@ -1,44 +1,106 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Github Issues Clone
 
-## Available Scripts
+A recreation of Github's issues page, as seen
+[here](https://github.com/facebook/react/issues).
 
-In the project directory, you can run:
+To demo a live version of this app,
+[click here](https://espp-budget-app.herokuapp.com/).
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of Contents
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+-   [About the Project](#about-the-project)
+    -   [Built With](#built-with)
+    -   [Tested With](#tested-with)
+-   [Getting Started](#getting-started)
+    -   [Prerequisites](#prerequisites)
+    -   [Installation](#installation)
+-   [Usage](#usage)
+-   [Roadmap](#roadmap)
+-   [Contributing](#contributing)
+-   [License](#license)
+-   [Contact](#contact)
+-   [Acknowledgements](#acknowledgements)
 
-### `npm test`
+<!-- ABOUT THE PROJECT -->
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## About The Project
 
-### `npm run build`
+<p align="center">
+    <img width="500" src="https://github.com/zhaluza/espp-budget-app/blob/master/screenshots/screenshot1?raw=true">
+</p>
+### Built With
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   [React](https://reactjs.org/)
+-   [Sass](https://sass-lang.com/)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Tested With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   [Jest](https://jestjs.io/)
+-   [Enzyme](https://enzymejs.github.io/enzyme/)
+<!-- GETTING STARTED -->
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Prerequisites
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-   npm
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```sh
+npm install npm@latest -g
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. Clone the repo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+git clone https://github.com/zhaluza/espp-budget-app.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Install NPM packages
+
+```sh
+npm i
+```
+
+4. Create a new Github access token (if one was provided to you, skip this step),
+
+5. Create a `.env` file and enter the access token:
+
+```sh
+REACT_APP_GITHUB_ACCESS_TOKEN=add access token here
+```
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+Boot up the app by running the following script:
+
+```sh
+npm start
+```
+
+You can now access the app at `http://localhost:3000` in your browser.
+
+To create a build, run the following
+command:
+
+```
+npm run build
+```
+
+## Testing
+
+The app's current test coverage consists of unit tests for each of the three
+main components. Run tests with the following script:
+
+```
+npm test
+```
+
+## License
+
+Distributed under the ISC License.
